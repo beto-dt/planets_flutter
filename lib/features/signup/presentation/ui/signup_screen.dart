@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:planets_flutter/common/extension/string_hardcoded.dart';
+import 'package:planets_flutter/features/signup/presentation/ui/widget/signup_form_list.dart';
 
 class SignUpScreen extends ConsumerStatefulWidget {
   const SignUpScreen({super.key});
@@ -13,15 +15,9 @@ class _SignUpScreenState extends ConsumerState<SignUpScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('SignUp'),
+        title: Text('Sign Up'.hardcoded),
       ),
-      body: const SingleChildScrollView(
-        child: Column(
-          children: [
-            Text('SignUp Screen')
-          ],
-        ),
-      ),
+      body: const SignUpFormList(),
     );
   }
 }

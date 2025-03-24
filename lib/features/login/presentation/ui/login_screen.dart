@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:go_router/go_router.dart';
+import 'package:planets_flutter/common/extension/string_hardcoded.dart';
+import 'package:planets_flutter/features/login/presentation/ui/widget/login_form.dart';
 
 class LoginScreen extends ConsumerStatefulWidget {
   const LoginScreen({super.key});
@@ -10,25 +11,13 @@ class LoginScreen extends ConsumerStatefulWidget {
 }
 
 class _LoginScreenState extends ConsumerState<LoginScreen> {
-    @override
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Login'),
+        title: Text('Login'.hardcoded),
       ),
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            const Text('Login Screen'),
-            IconButton.filled(
-                onPressed: (){
-                  context.push('/signup');
-                },
-                icon: const Icon(Icons.login_outlined)
-            )
-          ],
-        ),
-      ),
+      body: const LoginForm(),
     );
   }
 }
