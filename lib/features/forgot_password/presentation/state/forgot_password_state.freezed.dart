@@ -1,3 +1,4 @@
+// dart format width=80
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
@@ -9,138 +10,28 @@ part of 'forgot_password_state.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$ForgotPasswordState {
-  bool get isLoading => throw _privateConstructorUsedError;
-  bool? get isEmailSent => throw _privateConstructorUsedError;
-  String? get error => throw _privateConstructorUsedError;
+  bool get isLoading;
+  bool? get isEmailSent;
+  String? get error;
 
   /// Create a copy of ForgotPasswordState
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
   $ForgotPasswordStateCopyWith<ForgotPasswordState> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $ForgotPasswordStateCopyWith<$Res> {
-  factory $ForgotPasswordStateCopyWith(
-      ForgotPasswordState value, $Res Function(ForgotPasswordState) then) =
-  _$ForgotPasswordStateCopyWithImpl<$Res, ForgotPasswordState>;
-  @useResult
-  $Res call({bool isLoading, bool? isEmailSent, String? error});
-}
-
-/// @nodoc
-class _$ForgotPasswordStateCopyWithImpl<$Res, $Val extends ForgotPasswordState>
-    implements $ForgotPasswordStateCopyWith<$Res> {
-  _$ForgotPasswordStateCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
-  /// Create a copy of ForgotPasswordState
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? isLoading = null,
-    Object? isEmailSent = freezed,
-    Object? error = freezed,
-  }) {
-    return _then(_value.copyWith(
-      isLoading: null == isLoading
-          ? _value.isLoading
-          : isLoading // ignore: cast_nullable_to_non_nullable
-      as bool,
-      isEmailSent: freezed == isEmailSent
-          ? _value.isEmailSent
-          : isEmailSent // ignore: cast_nullable_to_non_nullable
-      as bool?,
-      error: freezed == error
-          ? _value.error
-          : error // ignore: cast_nullable_to_non_nullable
-      as String?,
-    ) as $Val);
-  }
-}
-
-/// @nodoc
-abstract class _$$ForgotPasswordStateImplCopyWith<$Res>
-    implements $ForgotPasswordStateCopyWith<$Res> {
-  factory _$$ForgotPasswordStateImplCopyWith(_$ForgotPasswordStateImpl value,
-      $Res Function(_$ForgotPasswordStateImpl) then) =
-  __$$ForgotPasswordStateImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call({bool isLoading, bool? isEmailSent, String? error});
-}
-
-/// @nodoc
-class __$$ForgotPasswordStateImplCopyWithImpl<$Res>
-    extends _$ForgotPasswordStateCopyWithImpl<$Res, _$ForgotPasswordStateImpl>
-    implements _$$ForgotPasswordStateImplCopyWith<$Res> {
-  __$$ForgotPasswordStateImplCopyWithImpl(_$ForgotPasswordStateImpl _value,
-      $Res Function(_$ForgotPasswordStateImpl) _then)
-      : super(_value, _then);
-
-  /// Create a copy of ForgotPasswordState
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? isLoading = null,
-    Object? isEmailSent = freezed,
-    Object? error = freezed,
-  }) {
-    return _then(_$ForgotPasswordStateImpl(
-      isLoading: null == isLoading
-          ? _value.isLoading
-          : isLoading // ignore: cast_nullable_to_non_nullable
-      as bool,
-      isEmailSent: freezed == isEmailSent
-          ? _value.isEmailSent
-          : isEmailSent // ignore: cast_nullable_to_non_nullable
-      as bool?,
-      error: freezed == error
-          ? _value.error
-          : error // ignore: cast_nullable_to_non_nullable
-      as String?,
-    ));
-  }
-}
-
-/// @nodoc
-
-class _$ForgotPasswordStateImpl implements _ForgotPasswordState {
-  _$ForgotPasswordStateImpl(
-      {this.isLoading = false, this.isEmailSent, this.error});
-
-  @override
-  @JsonKey()
-  final bool isLoading;
-  @override
-  final bool? isEmailSent;
-  @override
-  final String? error;
-
-  @override
-  String toString() {
-    return 'ForgotPasswordState(isLoading: $isLoading, isEmailSent: $isEmailSent, error: $error)';
-  }
+      _$ForgotPasswordStateCopyWithImpl<ForgotPasswordState>(
+          this as ForgotPasswordState, _$identity);
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$ForgotPasswordStateImpl &&
+            other is ForgotPasswordState &&
             (identical(other.isLoading, isLoading) ||
                 other.isLoading == isLoading) &&
             (identical(other.isEmailSent, isEmailSent) ||
@@ -151,33 +42,141 @@ class _$ForgotPasswordStateImpl implements _ForgotPasswordState {
   @override
   int get hashCode => Object.hash(runtimeType, isLoading, isEmailSent, error);
 
+  @override
+  String toString() {
+    return 'ForgotPasswordState(isLoading: $isLoading, isEmailSent: $isEmailSent, error: $error)';
+  }
+}
+
+/// @nodoc
+abstract mixin class $ForgotPasswordStateCopyWith<$Res> {
+  factory $ForgotPasswordStateCopyWith(
+          ForgotPasswordState value, $Res Function(ForgotPasswordState) _then) =
+      _$ForgotPasswordStateCopyWithImpl;
+  @useResult
+  $Res call({bool isLoading, bool? isEmailSent, String? error});
+}
+
+/// @nodoc
+class _$ForgotPasswordStateCopyWithImpl<$Res>
+    implements $ForgotPasswordStateCopyWith<$Res> {
+  _$ForgotPasswordStateCopyWithImpl(this._self, this._then);
+
+  final ForgotPasswordState _self;
+  final $Res Function(ForgotPasswordState) _then;
+
   /// Create a copy of ForgotPasswordState
   /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? isLoading = null,
+    Object? isEmailSent = freezed,
+    Object? error = freezed,
+  }) {
+    return _then(_self.copyWith(
+      isLoading: null == isLoading
+          ? _self.isLoading
+          : isLoading // ignore: cast_nullable_to_non_nullable
+              as bool,
+      isEmailSent: freezed == isEmailSent
+          ? _self.isEmailSent
+          : isEmailSent // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      error: freezed == error
+          ? _self.error
+          : error // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _ForgotPasswordState implements ForgotPasswordState {
+  _ForgotPasswordState({this.isLoading = false, this.isEmailSent, this.error});
+
+  @override
+  @JsonKey()
+  final bool isLoading;
+  @override
+  final bool? isEmailSent;
+  @override
+  final String? error;
+
+  /// Create a copy of ForgotPasswordState
+  /// with the given fields replaced by the non-null parameter values.
+  @override
   @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$ForgotPasswordStateCopyWith<_ForgotPasswordState> get copyWith =>
+      __$ForgotPasswordStateCopyWithImpl<_ForgotPasswordState>(
+          this, _$identity);
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _ForgotPasswordState &&
+            (identical(other.isLoading, isLoading) ||
+                other.isLoading == isLoading) &&
+            (identical(other.isEmailSent, isEmailSent) ||
+                other.isEmailSent == isEmailSent) &&
+            (identical(other.error, error) || other.error == error));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, isLoading, isEmailSent, error);
+
+  @override
+  String toString() {
+    return 'ForgotPasswordState(isLoading: $isLoading, isEmailSent: $isEmailSent, error: $error)';
+  }
+}
+
+/// @nodoc
+abstract mixin class _$ForgotPasswordStateCopyWith<$Res>
+    implements $ForgotPasswordStateCopyWith<$Res> {
+  factory _$ForgotPasswordStateCopyWith(_ForgotPasswordState value,
+          $Res Function(_ForgotPasswordState) _then) =
+      __$ForgotPasswordStateCopyWithImpl;
+  @override
+  @useResult
+  $Res call({bool isLoading, bool? isEmailSent, String? error});
+}
+
+/// @nodoc
+class __$ForgotPasswordStateCopyWithImpl<$Res>
+    implements _$ForgotPasswordStateCopyWith<$Res> {
+  __$ForgotPasswordStateCopyWithImpl(this._self, this._then);
+
+  final _ForgotPasswordState _self;
+  final $Res Function(_ForgotPasswordState) _then;
+
+  /// Create a copy of ForgotPasswordState
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
-  _$$ForgotPasswordStateImplCopyWith<_$ForgotPasswordStateImpl> get copyWith =>
-      __$$ForgotPasswordStateImplCopyWithImpl<_$ForgotPasswordStateImpl>(
-          this, _$identity);
+  $Res call({
+    Object? isLoading = null,
+    Object? isEmailSent = freezed,
+    Object? error = freezed,
+  }) {
+    return _then(_ForgotPasswordState(
+      isLoading: null == isLoading
+          ? _self.isLoading
+          : isLoading // ignore: cast_nullable_to_non_nullable
+              as bool,
+      isEmailSent: freezed == isEmailSent
+          ? _self.isEmailSent
+          : isEmailSent // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      error: freezed == error
+          ? _self.error
+          : error // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
+  }
 }
 
-abstract class _ForgotPasswordState implements ForgotPasswordState {
-  factory _ForgotPasswordState(
-      {final bool isLoading,
-        final bool? isEmailSent,
-        final String? error}) = _$ForgotPasswordStateImpl;
-
-  @override
-  bool get isLoading;
-  @override
-  bool? get isEmailSent;
-  @override
-  String? get error;
-
-  /// Create a copy of ForgotPasswordState
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$ForgotPasswordStateImplCopyWith<_$ForgotPasswordStateImpl> get copyWith =>
-      throw _privateConstructorUsedError;
-}
+// dart format on

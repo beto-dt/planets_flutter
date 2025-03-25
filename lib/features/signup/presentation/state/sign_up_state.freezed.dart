@@ -1,3 +1,4 @@
+// dart format width=80
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
@@ -9,51 +10,72 @@ part of 'sign_up_state.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
 mixin _$SignUpState {
-  SignUpModel? get signUpModel => throw _privateConstructorUsedError;
-  bool? get isSignUpSuccess => throw _privateConstructorUsedError;
-  bool get isLoading => throw _privateConstructorUsedError;
-  String? get error => throw _privateConstructorUsedError;
-  Map<String, dynamic> get signUpform => throw _privateConstructorUsedError;
+  SignUpModel? get signUpModel;
+  bool? get isSignUpSuccess;
+  bool get isLoading;
+  String? get error;
+  Map<String, dynamic> get signUpform;
 
   /// Create a copy of SignUpState
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
   $SignUpStateCopyWith<SignUpState> get copyWith =>
-      throw _privateConstructorUsedError;
+      _$SignUpStateCopyWithImpl<SignUpState>(this as SignUpState, _$identity);
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is SignUpState &&
+            (identical(other.signUpModel, signUpModel) ||
+                other.signUpModel == signUpModel) &&
+            (identical(other.isSignUpSuccess, isSignUpSuccess) ||
+                other.isSignUpSuccess == isSignUpSuccess) &&
+            (identical(other.isLoading, isLoading) ||
+                other.isLoading == isLoading) &&
+            (identical(other.error, error) || other.error == error) &&
+            const DeepCollectionEquality()
+                .equals(other.signUpform, signUpform));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, signUpModel, isSignUpSuccess,
+      isLoading, error, const DeepCollectionEquality().hash(signUpform));
+
+  @override
+  String toString() {
+    return 'SignUpState(signUpModel: $signUpModel, isSignUpSuccess: $isSignUpSuccess, isLoading: $isLoading, error: $error, signUpform: $signUpform)';
+  }
 }
 
 /// @nodoc
-abstract class $SignUpStateCopyWith<$Res> {
+abstract mixin class $SignUpStateCopyWith<$Res> {
   factory $SignUpStateCopyWith(
-      SignUpState value, $Res Function(SignUpState) then) =
-  _$SignUpStateCopyWithImpl<$Res, SignUpState>;
+          SignUpState value, $Res Function(SignUpState) _then) =
+      _$SignUpStateCopyWithImpl;
   @useResult
   $Res call(
       {SignUpModel? signUpModel,
-        bool? isSignUpSuccess,
-        bool isLoading,
-        String? error,
-        Map<String, dynamic> signUpform});
+      bool? isSignUpSuccess,
+      bool isLoading,
+      String? error,
+      Map<String, dynamic> signUpform});
 
   $SignUpModelCopyWith<$Res>? get signUpModel;
 }
 
 /// @nodoc
-class _$SignUpStateCopyWithImpl<$Res, $Val extends SignUpState>
-    implements $SignUpStateCopyWith<$Res> {
-  _$SignUpStateCopyWithImpl(this._value, this._then);
+class _$SignUpStateCopyWithImpl<$Res> implements $SignUpStateCopyWith<$Res> {
+  _$SignUpStateCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final SignUpState _self;
+  final $Res Function(SignUpState) _then;
 
   /// Create a copy of SignUpState
   /// with the given fields replaced by the non-null parameter values.
@@ -66,28 +88,28 @@ class _$SignUpStateCopyWithImpl<$Res, $Val extends SignUpState>
     Object? error = freezed,
     Object? signUpform = null,
   }) {
-    return _then(_value.copyWith(
+    return _then(_self.copyWith(
       signUpModel: freezed == signUpModel
-          ? _value.signUpModel
+          ? _self.signUpModel
           : signUpModel // ignore: cast_nullable_to_non_nullable
-      as SignUpModel?,
+              as SignUpModel?,
       isSignUpSuccess: freezed == isSignUpSuccess
-          ? _value.isSignUpSuccess
+          ? _self.isSignUpSuccess
           : isSignUpSuccess // ignore: cast_nullable_to_non_nullable
-      as bool?,
+              as bool?,
       isLoading: null == isLoading
-          ? _value.isLoading
+          ? _self.isLoading
           : isLoading // ignore: cast_nullable_to_non_nullable
-      as bool,
+              as bool,
       error: freezed == error
-          ? _value.error
+          ? _self.error
           : error // ignore: cast_nullable_to_non_nullable
-      as String?,
+              as String?,
       signUpform: null == signUpform
-          ? _value.signUpform
+          ? _self.signUpform
           : signUpform // ignore: cast_nullable_to_non_nullable
-      as Map<String, dynamic>,
-    ) as $Val);
+              as Map<String, dynamic>,
+    ));
   }
 
   /// Create a copy of SignUpState
@@ -95,88 +117,25 @@ class _$SignUpStateCopyWithImpl<$Res, $Val extends SignUpState>
   @override
   @pragma('vm:prefer-inline')
   $SignUpModelCopyWith<$Res>? get signUpModel {
-    if (_value.signUpModel == null) {
+    if (_self.signUpModel == null) {
       return null;
     }
 
-    return $SignUpModelCopyWith<$Res>(_value.signUpModel!, (value) {
-      return _then(_value.copyWith(signUpModel: value) as $Val);
+    return $SignUpModelCopyWith<$Res>(_self.signUpModel!, (value) {
+      return _then(_self.copyWith(signUpModel: value));
     });
   }
 }
 
 /// @nodoc
-abstract class _$$SignUpStateImplCopyWith<$Res>
-    implements $SignUpStateCopyWith<$Res> {
-  factory _$$SignUpStateImplCopyWith(
-      _$SignUpStateImpl value, $Res Function(_$SignUpStateImpl) then) =
-  __$$SignUpStateImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {SignUpModel? signUpModel,
-        bool? isSignUpSuccess,
-        bool isLoading,
-        String? error,
-        Map<String, dynamic> signUpform});
 
-  @override
-  $SignUpModelCopyWith<$Res>? get signUpModel;
-}
-
-/// @nodoc
-class __$$SignUpStateImplCopyWithImpl<$Res>
-    extends _$SignUpStateCopyWithImpl<$Res, _$SignUpStateImpl>
-    implements _$$SignUpStateImplCopyWith<$Res> {
-  __$$SignUpStateImplCopyWithImpl(
-      _$SignUpStateImpl _value, $Res Function(_$SignUpStateImpl) _then)
-      : super(_value, _then);
-
-  /// Create a copy of SignUpState
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? signUpModel = freezed,
-    Object? isSignUpSuccess = freezed,
-    Object? isLoading = null,
-    Object? error = freezed,
-    Object? signUpform = null,
-  }) {
-    return _then(_$SignUpStateImpl(
-      signUpModel: freezed == signUpModel
-          ? _value.signUpModel
-          : signUpModel // ignore: cast_nullable_to_non_nullable
-      as SignUpModel?,
-      isSignUpSuccess: freezed == isSignUpSuccess
-          ? _value.isSignUpSuccess
-          : isSignUpSuccess // ignore: cast_nullable_to_non_nullable
-      as bool?,
-      isLoading: null == isLoading
-          ? _value.isLoading
-          : isLoading // ignore: cast_nullable_to_non_nullable
-      as bool,
-      error: freezed == error
-          ? _value.error
-          : error // ignore: cast_nullable_to_non_nullable
-      as String?,
-      signUpform: null == signUpform
-          ? _value._signUpform
-          : signUpform // ignore: cast_nullable_to_non_nullable
-      as Map<String, dynamic>,
-    ));
-  }
-}
-
-/// @nodoc
-
-class _$SignUpStateImpl implements _SignUpState {
-  _$SignUpStateImpl(
+class _SignUpState implements SignUpState {
+  _SignUpState(
       {this.signUpModel,
-        this.isSignUpSuccess,
-        this.isLoading = false,
-        this.error,
-        final Map<String, dynamic> signUpform = const {}})
+      this.isSignUpSuccess,
+      this.isLoading = false,
+      this.error,
+      final Map<String, dynamic> signUpform = const {}})
       : _signUpform = signUpform;
 
   @override
@@ -197,16 +156,19 @@ class _$SignUpStateImpl implements _SignUpState {
     return EqualUnmodifiableMapView(_signUpform);
   }
 
+  /// Create a copy of SignUpState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  String toString() {
-    return 'SignUpState(signUpModel: $signUpModel, isSignUpSuccess: $isSignUpSuccess, isLoading: $isLoading, error: $error, signUpform: $signUpform)';
-  }
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$SignUpStateCopyWith<_SignUpState> get copyWith =>
+      __$SignUpStateCopyWithImpl<_SignUpState>(this, _$identity);
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$SignUpStateImpl &&
+            other is _SignUpState &&
             (identical(other.signUpModel, signUpModel) ||
                 other.signUpModel == signUpModel) &&
             (identical(other.isSignUpSuccess, isSignUpSuccess) ||
@@ -222,38 +184,86 @@ class _$SignUpStateImpl implements _SignUpState {
   int get hashCode => Object.hash(runtimeType, signUpModel, isSignUpSuccess,
       isLoading, error, const DeepCollectionEquality().hash(_signUpform));
 
+  @override
+  String toString() {
+    return 'SignUpState(signUpModel: $signUpModel, isSignUpSuccess: $isSignUpSuccess, isLoading: $isLoading, error: $error, signUpform: $signUpform)';
+  }
+}
+
+/// @nodoc
+abstract mixin class _$SignUpStateCopyWith<$Res>
+    implements $SignUpStateCopyWith<$Res> {
+  factory _$SignUpStateCopyWith(
+          _SignUpState value, $Res Function(_SignUpState) _then) =
+      __$SignUpStateCopyWithImpl;
+  @override
+  @useResult
+  $Res call(
+      {SignUpModel? signUpModel,
+      bool? isSignUpSuccess,
+      bool isLoading,
+      String? error,
+      Map<String, dynamic> signUpform});
+
+  @override
+  $SignUpModelCopyWith<$Res>? get signUpModel;
+}
+
+/// @nodoc
+class __$SignUpStateCopyWithImpl<$Res> implements _$SignUpStateCopyWith<$Res> {
+  __$SignUpStateCopyWithImpl(this._self, this._then);
+
+  final _SignUpState _self;
+  final $Res Function(_SignUpState) _then;
+
   /// Create a copy of SignUpState
   /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
-  _$$SignUpStateImplCopyWith<_$SignUpStateImpl> get copyWith =>
-      __$$SignUpStateImplCopyWithImpl<_$SignUpStateImpl>(this, _$identity);
-}
-
-abstract class _SignUpState implements SignUpState {
-  factory _SignUpState(
-      {final SignUpModel? signUpModel,
-        final bool? isSignUpSuccess,
-        final bool isLoading,
-        final String? error,
-        final Map<String, dynamic> signUpform}) = _$SignUpStateImpl;
-
-  @override
-  SignUpModel? get signUpModel;
-  @override
-  bool? get isSignUpSuccess;
-  @override
-  bool get isLoading;
-  @override
-  String? get error;
-  @override
-  Map<String, dynamic> get signUpform;
+  $Res call({
+    Object? signUpModel = freezed,
+    Object? isSignUpSuccess = freezed,
+    Object? isLoading = null,
+    Object? error = freezed,
+    Object? signUpform = null,
+  }) {
+    return _then(_SignUpState(
+      signUpModel: freezed == signUpModel
+          ? _self.signUpModel
+          : signUpModel // ignore: cast_nullable_to_non_nullable
+              as SignUpModel?,
+      isSignUpSuccess: freezed == isSignUpSuccess
+          ? _self.isSignUpSuccess
+          : isSignUpSuccess // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      isLoading: null == isLoading
+          ? _self.isLoading
+          : isLoading // ignore: cast_nullable_to_non_nullable
+              as bool,
+      error: freezed == error
+          ? _self.error
+          : error // ignore: cast_nullable_to_non_nullable
+              as String?,
+      signUpform: null == signUpform
+          ? _self._signUpform
+          : signUpform // ignore: cast_nullable_to_non_nullable
+              as Map<String, dynamic>,
+    ));
+  }
 
   /// Create a copy of SignUpState
   /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$SignUpStateImplCopyWith<_$SignUpStateImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+  @pragma('vm:prefer-inline')
+  $SignUpModelCopyWith<$Res>? get signUpModel {
+    if (_self.signUpModel == null) {
+      return null;
+    }
+
+    return $SignUpModelCopyWith<$Res>(_self.signUpModel!, (value) {
+      return _then(_self.copyWith(signUpModel: value));
+    });
+  }
 }
+
+// dart format on
