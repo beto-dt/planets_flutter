@@ -21,10 +21,9 @@ final networkServiceProvider = Provider<Dio>((ref) {
   return dio;
 });
 
-// Segundo provider para el endpoint 2
-final networkServicePlanentsProvider = Provider<Dio>((ref) {
+final networkServicePlanetsProvider = Provider<Dio>((ref) {
   final options = BaseOptions(
-    baseUrl: baseURLPlanets, // Segunda URL base
+    baseUrl: baseURLPlanets,
     connectTimeout: const Duration(seconds: 60),
     receiveTimeout: const Duration(seconds: 60),
     sendTimeout: const Duration(seconds: 60),
@@ -33,6 +32,7 @@ final networkServicePlanentsProvider = Provider<Dio>((ref) {
   final dio = Dio(options);
   final networkServiceInterceptor =
   ref.watch(networkServiceInterceptorProvider(dio));
+
   dio.interceptors.add(networkServiceInterceptor);
   return dio;
 });

@@ -20,18 +20,6 @@ abstract class PlanetResponse with _$PlanetResponse {
 abstract class Planet with _$Planet {
   const factory Planet({
     @JsonKey(name: "name") required String name,
-    @JsonKey(name: "orbital_distance_km") required int orbitalDistanceKm,
-    @JsonKey(name: "equatorial_radius_km") required int equatorialRadiusKm,
-    @JsonKey(name: "volume_km3") required int volumeKm3,
-    @JsonKey(name: "mass_kg") required String massKg,
-    @JsonKey(name: "density_g_cm3") required double densityGCm3,
-    @JsonKey(name: "surface_gravity_m_s2") required double surfaceGravityMs2,
-    @JsonKey(name: "escape_velocity_kmh") required int escapeVelocityKmh,
-    @JsonKey(name: "day_length_earth_days") required double dayLengthEarthDays,
-    @JsonKey(name: "year_length_earth_days") required double yearLengthEarthDays,
-    @JsonKey(name: "orbital_speed_kmh") required int orbitalSpeedKmh,
-    @JsonKey(name: "atmosphere_composition") required String atmosphereComposition,
-    @JsonKey(name: "moons") required int moons,
     @JsonKey(name: "image") required String image,
     @JsonKey(name: "description") required String description,
   }) = _Planet;

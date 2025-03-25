@@ -28,12 +28,9 @@ final class LoginRepository
   @override
   Future<LoginResponse> login(LoginRequest loginRequest) async {
     try {
-      // api call
       final response = await _loginApi.login(loginRequest);
-      // get access token and refresh token from response
       final accessToken = response.data.accessToken;
       final refreshToken = response.data.refreshToken;
-      // store in secure storage
       await _tokenStorage.storeToken(accessToken, refreshToken);
 
       return response;
