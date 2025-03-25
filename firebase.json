@@ -1,0 +1,43 @@
+{
+  "hosting": {
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/planets/**",
+        "destination": "https://us-central1-a-academia-espacial.cloudfunctions.net/planets"
+      }
+    ],
+    "headers": [
+      {
+        "source": "/planets/**",
+        "headers": [
+          {
+            "key": "Access-Control-Allow-Origin",
+            "value": "*"
+          },
+          {
+            "key": "Access-Control-Allow-Methods",
+            "value": "GET, POST, PUT, DELETE, OPTIONS"
+          },
+          {
+            "key": "Access-Control-Allow-Headers",
+            "value": "content-type, Content-Type, Authorization, X-Requested-With"
+          },
+          {
+            "key": "Access-Control-Expose-Headers",
+            "value": "content-type, Content-Type"
+          },
+          {
+            "key": "Access-Control-Max-Age",
+            "value": "3600"
+          }
+        ]
+      }
+    ]
+  }
+}
